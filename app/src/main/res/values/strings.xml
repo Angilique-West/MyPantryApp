@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Pantry</string>
+    <string-array name="unit_items">
+        <item>kg</item>
+        <item>g</item>
+        <item>litres</item>
+        <item>ml</item>
+        <item>pieces</item>
+        <item>packets</item>
+        <item>cans</item>
+        <item>bottles</item>
+    </string-array>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurrybg"
+    tools:context=".HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settingsToolbar"
+        android:layout_width="67dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="289dp"
+        android:layout_marginBottom="666dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:navigationIcon="@drawable/ic_menu"
+         />
+
+    <Button
+        android:id="@+id/buttonPantrylist"
+        android:layout_width="389dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="55dp"
+        android:backgroundTint="@color/softsage"
+        android:drawableLeft="@drawable/list"
+        android:drawableTint="@color/white"
+        android:text="Pantry List"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonRecipes"
+        android:layout_width="389dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/softsage"
+        android:drawableLeft="@drawable/list"
+        android:drawableTint="@color/material_dynamic_neutral_variant30"
+        android:text="Recipes"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPantrylist" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Pantry"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/buttonAddNewItem"
+        android:layout_width="389dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="27dp"
+        android:backgroundTint="@color/softsage"
+        android:drawableLeft="@drawable/add"
+        android:drawableTint="@color/white"
+        android:text="Add New Item"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRecipes"
+        app:layout_constraintVertical_bias="0.022" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
